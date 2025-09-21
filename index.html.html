@@ -125,103 +125,43 @@
 
     <section id="powerpoints" class="section">
       <h2>PowerPoints</h2>
-      <p class="muted">Two good options: <strong>(A)</strong> embed the deck so it plays in‑browser via Microsoft Office Viewer, or <strong>(B)</strong> offer a direct download. Both are supported below.</p>
+      <p class="muted">This section uses <strong>direct download links only</strong>. No Office Viewer embeds. Upload your files to <code>/assets/slides/</code> in your repo using the exact filenames below (or rename to match).</p>
 
-      <!--
-        HOW TO USE:
-        1) Create a folder in your repo: /assets/slides/
-        2) Upload your .pptx files there.
-        3) Grab the RAW file URL (it will look like: https://raw.githubusercontent.com/USERNAME/REPO/BRANCH/assets/slides/YourDeck.pptx)
-        4) Replace the sample src URLs below with your actual RAW URLs.
+      <!-- Prefer clean, web‑safe filenames. If you keep originals, ensure the hrefs are URL‑encoded. -->
+      <ul>
+        <li><a href="assets/slides/Sterile-Product-Preparation.pptx" target="_blank" rel="noopener">Sterile Product Preparation (.pptx)</a></li>
+        <li><a href="assets/slides/Nursing-Orientation-and-Training-10.5.23.pptx" target="_blank" rel="noopener">Nursing Orientation &amp; Training (10.5.23) (.pptx)</a></li>
+        <li><a href="assets/slides/IC-EH-Orientation-09-2023.pptx" target="_blank" rel="noopener">IC &amp; EH Orientation (09.2023) (.pptx)</a></li>
+        <li><a href="assets/slides/Antibiotic-Stewardship.pptx" target="_blank" rel="noopener">Antibiotic Stewardship (.pptx)</a></li>
+        <li><a href="assets/slides/2024-Annual-Competency-Slideshow-v2.pptx" target="_blank" rel="noopener">2024 Annual Competency Slideshow v2 (.pptx)</a></li>
+      </ul>
 
-        NOTE: You can also export to PDF and embed the PDF with the <iframe> example further down.
-      -->
-
-      <div class="grid">
-        <!-- PPTX embed via Office Viewer -->
-        <article class="card">
-          <div class="frame" style="aspect-ratio:4/3">
-            <iframe
-              src="https://view.officeapps.live.com/op/embed.aspx?src=Sterile%20Product%20Preparation.pptx"
-              title="PowerPoint 1 (embedded)"
-              allowfullscreen></iframe>
-          </div>
-          <div class="meta">
-            <a class="muted" href="/mnt/data/Sterile Product Preparation.pptx" target="_blank" rel="noopener">Download .pptx</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="frame" style="aspect-ratio:4/3">
-            <iframe
-              src="https://view.officeapps.live.com/op/embed.aspx?src=Nursing%20Orientation%20and%20Training%2010.5.23.pptx.pptx"
-              title="PowerPoint 2 (embedded)"
-              allowfullscreen></iframe>
-          </div>
-          <div class="meta">
-            <a class="muted" href="/mnt/data/Nursing Orientation and Training 10.5.23.pptx.pptx" target="_blank" rel="noopener">Download .pptx</a>
-          </div>
-        </article>
-
-        <!-- PDF fallback example (export your PPT to PDF and replace the URL) -->
-        <article class="card">
-          <div class="frame" style="aspect-ratio:4/3">
-            <iframe src="REPLACE_WITH_PDF_URL" title="Slides PDF"></iframe>
-          </div>
-          <div class="meta">
-            <a class="muted" href="REPLACE_WITH_PDF_URL" target="_blank" rel="noopener">Open PDF</a>
-          </div>
-        </article>
-      </div>
-
-      <article class=\"card\">
-        <div class=\"frame\" style=\"aspect-ratio:4/3\">
-          <iframe
-            src=\"IC%20EH%20orientation0_09.2023.ppt.ppt\"
-            title=\"IC & EH Orientation (embedded)\"
-            allowfullscreen></iframe>
-        </div>
-        <div class=\"meta\">
-          <a class=\"muted\" href=\"/mnt/data/IC EH orientation0_09.2023.ppt.ppt\" target=\"_blank\" rel=\"noopener\">Download .ppt</a>
-        </div>
-      </article>
-
-      <article class=\"card\">
-        <div class=\"frame\" style=\"aspect-ratio:4/3\">
-          <iframe
-            src=\"Antibiotic%20Stewardship,pptx.pptx\"
-            title=\"Antibiotic Stewardship (embedded)\"
-            allowfullscreen></iframe>
-        </div>
-        <div class=\"meta\">
-          <a class=\"muted\" href=\"/mnt/data/Antibiotic Stewardship,pptx.pptx\" target=\"_blank\" rel=\"noopener\">Download .pptx</a>
-        </div>
-      </article>
-
-      <article class=\"card\">
-        <div class=\"frame\" style=\"aspect-ratio:4/3\">
-          <iframe
-            src=\"2024%20Annual%20Competency%20Slideshow%20v2.pptx.pptx\"
-            title=\"2024 Annual Competency Slideshow v2 (embedded)\"
-            allowfullscreen></iframe>
-        </div>
-        <div class=\"meta\">
-          <a class=\"muted\" href=\"/mnt/data/2024 Annual Competency Slideshow v2.pptx.pptx\" target=\"_blank\" rel=\"noopener\">Download .pptx</a>
-        </div>
-      </article>
-
-      <p class=\"muted\" style=\"margin-top:10px\">
-
-      <details>
-        <summary class="muted">Need the exact URL format?</summary>
-        <div class="muted" style="padding:10px 0 0">
-          RAW (direct download): <code>https://raw.githubusercontent.com/&lt;USER&gt;/&lt;REPO&gt;/&lt;BRANCH&gt;/assets/slides/YourDeck.pptx</code><br>
-          Office Viewer embed: <code>https://view.officeapps.live.com/op/embed.aspx?src={URL_ENCODED_RAW_URL}</code>
+      <details style="margin-top:10px">
+        <summary class="muted">If you must keep your original filenames</summary>
+        <div class="muted" style="padding-top:8px">
+          Replace each link above with the URL‑encoded path to your original file, for example:<br>
+          <code>assets/slides/Sterile%20Product%20Preparation.pptx</code><br>
+          <code>assets/slides/Nursing%20Orientation%20and%20Training%2010.5.23.pptx.pptx</code><br>
+          <code>assets/slides/IC%20EH%20orientation0_09.2023.ppt.ppt</code><br>
+          <code>assets/slides/Antibiotic%20Stewardship%2Cpptx.pptx</code><br>
+          <code>assets/slides/2024%20Annual%20Competency%20Slideshow%20v2.pptx.pptx</code>
         </div>
       </details>
     </section>
 
     <section id="form" class="section">
+      <h2>Microsoft Form — Acknowledgment / Quiz</h2>
+      <div class="form-wrap">
+        <iframe class="form-frame" src="https://forms.office.com/r/P2aYQTNSmT?origin=lprLink" title="Microsoft Form"></iframe>
+      </div>
+      <p class="muted" style="margin-top:10px;">Having trouble seeing the form? <a href="https://forms.office.com/r/P2aYQTNSmT?origin=lprLink" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
+    </section> class="section">
+      <h2>Microsoft Form — Acknowledgment / Quiz</h2>
+      <div class="form-wrap">
+        <iframe class="form-frame" src="https://forms.office.com/r/P2aYQTNSmT?origin=lprLink" title="Microsoft Form"></iframe>
+      </div>
+      <p class="muted" style="margin-top:10px;">Having trouble seeing the form? <a href="https://forms.office.com/r/P2aYQTNSmT?origin=lprLink" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
+    </section> class="section">
       <h2>Microsoft Form — Acknowledgment / Quiz</h2>
       <div class="form-wrap">
         <!-- If your IT policy blocks embedding from forms.office.com, replace the src below with the official Microsoft Forms "Embed" code (it adds embed=true). -->
