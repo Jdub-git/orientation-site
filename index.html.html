@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Orientation & Training</title>
+  <meta name="description" content="Omega Hospital Orientation & Training Portal" />
+  <style>
+    :root { --bg:#0b0d10; --card:#12161b; --text:#e8edf2; --muted:#9aa7b2; --accent:#4da3ff; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+    header{position:sticky;top:0;background:rgba(11,13,16,.85);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid #1e242b;z-index:10}
+    .wrap{max-width:1100px;margin:0 auto;padding:18px}
+    h1{font-size: clamp(1.4rem, 2.2vw, 2rem); margin:0}
+    nav{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px}
+    nav a{color:var(--text);text-decoration:none;padding:8px 12px;border:1px solid #27303a;border-radius:999px;background:#0f1318}
+    nav a:hover{border-color:var(--accent)}
+    main{max-width:1100px;margin:28px auto;padding:0 18px 40px}
+    .section{margin:28px 0}
+    .section h2{font-size: clamp(1.2rem, 2vw, 1.6rem); margin:0 0 12px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+    .card{background:var(--card);border:1px solid #1e242b;border-radius:16px;overflow:hidden}
+    .frame{position:relative;width:100%;aspect-ratio:16/9;background:#0f1318}
+    .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .card .meta{padding:12px 14px;color:var(--muted);font-size:.95rem;border-top:1px solid #1e242b}
+    .muted{color:var(--muted)}
+    footer{border-top:1px solid #1e242b;color:var(--muted);padding:24px 18px;text-align:center}
+    .form-wrap{background:var(--card);border:1px solid #1e242b;border-radius:16px;padding:12px}
+    .form-frame{width:100%;height:760px;border:0}
+    @media (max-width:480px){ .grid{grid-template-columns:1fr} .form-frame{height:900px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Orientation & Training</h1>
+      <nav aria-label="Sections">
+        <a href="#videos">Videos</a>
+        <a href="#form">Acknowledge / Quiz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="intro" class="section">
+      <p class="muted">All content is hosted on YouTube and embedded here for fast loading. Submit your acknowledgment or quiz using the Microsoft Form below. If you experience loading issues on a restricted network, use the direct links under each video.</p>
+    </section>
+
+    <section id="videos" class="section">
+      <h2>Training Videos</h2>
+      <div class="grid">
+        <!-- Video 1 -->
+        <article class="card">
+          <div class="frame">
+            <iframe 
+              src="https://www.youtube.com/embed/tBxK9-bfg6g" 
+              title="YouTube video 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="meta">
+            <a class="muted" href="https://youtu.be/tBxK9-bfg6g" target="_blank" rel="noopener">Open on YouTube</a>
+          </div>
+        </article>
+
+        <!-- Video 2 -->
+        <article class="card">
+          <div class="frame">
+            <iframe 
+              src="https://www.youtube.com/embed/1MF83ehBSkg" 
+              title="YouTube video 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="meta">
+            <a class="muted" href="https://youtu.be/1MF83ehBSkg" target="_blank" rel="noopener">Open on YouTube</a>
+          </div>
+        </article>
+
+        <!-- Video 3 -->
+        <article class="card">
+          <div class="frame">
+            <iframe 
+              src="https://www.youtube.com/embed/FzAmRySlKvs" 
+              title="YouTube video 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="meta">
+            <a class="muted" href="https://youtu.be/FzAmRySlKvs" target="_blank" rel="noopener">Open on YouTube</a>
+          </div>
+        </article>
+
+        <!-- Video 4 -->
+        <article class="card">
+          <div class="frame">
+            <iframe 
+              src="https://www.youtube.com/embed/SeKp9UOZtBc" 
+              title="YouTube video 4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="meta">
+            <a class="muted" href="https://youtu.be/SeKp9UOZtBc" target="_blank" rel="noopener">Open on YouTube</a>
+          </div>
+        </article>
+
+        <!-- Video 5 -->
+        <article class="card">
+          <div class="frame">
+            <iframe 
+              src="https://www.youtube.com/embed/JFgu68Y9094" 
+              title="YouTube video 5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="meta">
+            <a class="muted" href="https://youtu.be/JFgu68Y9094" target="_blank" rel="noopener">Open on YouTube</a>
+          </div>
+        </article>
+
+        <!-- Video 6 -->
+        <article class="card">
+          <div class="frame">
+            <iframe 
+              src="https://www.youtube.com/embed/INWVAx5z4zI" 
+              title="YouTube video 6" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="meta">
+            <a class="muted" href="https://youtu.be/INWVAx5z4zI" target="_blank" rel="noopener">Open on YouTube</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="powerpoints" class="section">
+      <h2>PowerPoints</h2>
+      <p class="muted">Two good options: <strong>(A)</strong> embed the deck so it plays in‑browser via Microsoft Office Viewer, or <strong>(B)</strong> offer a direct download. Both are supported below.</p>
+
+      <!--
+        HOW TO USE:
+        1) Create a folder in your repo: /assets/slides/
+        2) Upload your .pptx files there.
+        3) Grab the RAW file URL (it will look like: https://raw.githubusercontent.com/USERNAME/REPO/BRANCH/assets/slides/YourDeck.pptx)
+        4) Replace the sample src URLs below with your actual RAW URLs.
+
+        NOTE: You can also export to PDF and embed the PDF with the <iframe> example further down.
+      -->
+
+      <div class="grid">
+        <!-- PPTX embed via Office Viewer -->
+        <article class="card">
+          <div class="frame" style="aspect-ratio:4/3">
+            <iframe
+              src="https://view.officeapps.live.com/op/embed.aspx?src=Sterile%20Product%20Preparation.pptx"
+              title="PowerPoint 1 (embedded)"
+              allowfullscreen></iframe>
+          </div>
+          <div class="meta">
+            <a class="muted" href="/mnt/data/Sterile Product Preparation.pptx" target="_blank" rel="noopener">Download .pptx</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="frame" style="aspect-ratio:4/3">
+            <iframe
+              src="https://view.officeapps.live.com/op/embed.aspx?src=Nursing%20Orientation%20and%20Training%2010.5.23.pptx.pptx"
+              title="PowerPoint 2 (embedded)"
+              allowfullscreen></iframe>
+          </div>
+          <div class="meta">
+            <a class="muted" href="/mnt/data/Nursing Orientation and Training 10.5.23.pptx.pptx" target="_blank" rel="noopener">Download .pptx</a>
+          </div>
+        </article>
+
+        <!-- PDF fallback example (export your PPT to PDF and replace the URL) -->
+        <article class="card">
+          <div class="frame" style="aspect-ratio:4/3">
+            <iframe src="REPLACE_WITH_PDF_URL" title="Slides PDF"></iframe>
+          </div>
+          <div class="meta">
+            <a class="muted" href="REPLACE_WITH_PDF_URL" target="_blank" rel="noopener">Open PDF</a>
+          </div>
+        </article>
+      </div>
+
+      <article class=\"card\">
+        <div class=\"frame\" style=\"aspect-ratio:4/3\">
+          <iframe
+            src=\"IC%20EH%20orientation0_09.2023.ppt.ppt\"
+            title=\"IC & EH Orientation (embedded)\"
+            allowfullscreen></iframe>
+        </div>
+        <div class=\"meta\">
+          <a class=\"muted\" href=\"/mnt/data/IC EH orientation0_09.2023.ppt.ppt\" target=\"_blank\" rel=\"noopener\">Download .ppt</a>
+        </div>
+      </article>
+
+      <article class=\"card\">
+        <div class=\"frame\" style=\"aspect-ratio:4/3\">
+          <iframe
+            src=\"Antibiotic%20Stewardship,pptx.pptx\"
+            title=\"Antibiotic Stewardship (embedded)\"
+            allowfullscreen></iframe>
+        </div>
+        <div class=\"meta\">
+          <a class=\"muted\" href=\"/mnt/data/Antibiotic Stewardship,pptx.pptx\" target=\"_blank\" rel=\"noopener\">Download .pptx</a>
+        </div>
+      </article>
+
+      <article class=\"card\">
+        <div class=\"frame\" style=\"aspect-ratio:4/3\">
+          <iframe
+            src=\"2024%20Annual%20Competency%20Slideshow%20v2.pptx.pptx\"
+            title=\"2024 Annual Competency Slideshow v2 (embedded)\"
+            allowfullscreen></iframe>
+        </div>
+        <div class=\"meta\">
+          <a class=\"muted\" href=\"/mnt/data/2024 Annual Competency Slideshow v2.pptx.pptx\" target=\"_blank\" rel=\"noopener\">Download .pptx</a>
+        </div>
+      </article>
+
+      <p class=\"muted\" style=\"margin-top:10px\">
+
+      <details>
+        <summary class="muted">Need the exact URL format?</summary>
+        <div class="muted" style="padding:10px 0 0">
+          RAW (direct download): <code>https://raw.githubusercontent.com/&lt;USER&gt;/&lt;REPO&gt;/&lt;BRANCH&gt;/assets/slides/YourDeck.pptx</code><br>
+          Office Viewer embed: <code>https://view.officeapps.live.com/op/embed.aspx?src={URL_ENCODED_RAW_URL}</code>
+        </div>
+      </details>
+    </section>
+
+    <section id="form" class="section">
+      <h2>Microsoft Form — Acknowledgment / Quiz</h2>
+      <div class="form-wrap">
+        <!-- If your IT policy blocks embedding from forms.office.com, replace the src below with the official Microsoft Forms "Embed" code (it adds embed=true). -->
+        <iframe class="form-frame" src="https://forms.office.com/r/P2aYQTNSmT?origin=lprLink" title="Microsoft Form"></iframe>
+      </div>
+      <p class="muted" style="margin-top:10px;">Having trouble seeing the form? <a href="https://forms.office.com/r/P2aYQTNSmT?origin=lprLink" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="year"></span> Omega Hospital — Training Portal</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
